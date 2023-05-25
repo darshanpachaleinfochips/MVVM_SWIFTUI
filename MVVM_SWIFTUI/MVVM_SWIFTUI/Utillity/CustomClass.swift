@@ -31,6 +31,7 @@ struct CustomUITextField:View{
         if type == .password{
             SecureField(placeHolderText, text: $userInput)
                 .textFieldStyle(.roundedBorder)
+                .border(.foreground)
                 .multilineTextAlignment(.center)
                 .frame(height: userInputHeight)
                 .keyboardType(self.getKeyBoard())
@@ -39,6 +40,7 @@ struct CustomUITextField:View{
         }else{
             TextField(placeHolderText, text: $userInput)
                 .textFieldStyle(.roundedBorder)
+                .border(.foreground)
                 .multilineTextAlignment(.center)
                 .frame(height: userInputHeight)
                 .keyboardType(self.getKeyBoard())

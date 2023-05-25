@@ -16,11 +16,18 @@ struct LogInView: View {
     @ObservedObject var loginViewModel = LogInViewModel()
     
     var body: some View {
+        
+        
+        
+     
+        
+        
         NavigationView{
             VStack(alignment: .center, spacing:0.0){
                 Image("logo")
                 CustomUITextField.init("Email", type: .email, userInput: $loginViewModel.userEmail)
                 CustomUITextField.init("Password", type: .password, userInput:$loginViewModel.userPassword)
+          
                 
                 
                 
